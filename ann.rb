@@ -7,7 +7,7 @@ class Ann < Formula
 
   def install
     # Fix for Mavericks make error
-    inreplace 'ann2fig/ann2fig.cpp', 'main', 'int main' if MacOS.version >= :mavericks
+    inreplace 'ann2fig/ann2fig.cpp', 'main', 'int main' if MacOS.version >= :mountainlion
 
     system "make", "macosx-g++"
     prefix.install "bin", "lib", "sample", "doc", "include"
