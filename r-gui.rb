@@ -14,7 +14,7 @@ class RGui < Formula
     sha256 "a1daa51392bf3ab2704fbf6335685d09269514773e0eb5ceda8ae4873513092e" => :mavericks
   end
 
-  depends_on :xcode
+  depends_on :xcode => :build
   depends_on :macos => :snow_leopard
   depends_on :arch => :x86_64
 
